@@ -1,0 +1,96 @@
+@import "../base";
+
+.top {
+  width: 99%;
+  height: 70px;
+  top: 0px;
+  position: sticky;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.topLeft {
+  flex: 3;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.topRight {
+  flex: 3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.topCenter {
+  flex: 6;
+  display: flex;
+
+  .topList {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+
+    .topListItem {
+      margin-right: 20px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}
+
+.topRightItem {
+  // border: 1px solid black;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 10px;
+  background-color: $background;
+  &:hover {
+    background-color: $background-hover;
+  }
+}
+
+.topRightImage {
+  height: 40px;
+  padding: 5px;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 30px;
+  font-weight: 400;
+  &:hover {
+    background-color: $background-hover;
+  }
+}
+.image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.icons {
+  font-size: 20px;
+}
+
+.badge {
+  :global {
+    .ant-badge-count {
+      margin: 10px;
+    }
+  }
+}

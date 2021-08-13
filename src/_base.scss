@@ -1,0 +1,20 @@
+$text-color: #b1bdb4;
+
+$black-primary: #16181b;
+$black-secondary: #121417;
+$border-color: #4c4c4c;
+$background: #f0f2f5;
+$background-hover: #e4e6eb;
+
+$breakpoint-medium: 1224px;
+$breakpoint-small: 520px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background;
+}
